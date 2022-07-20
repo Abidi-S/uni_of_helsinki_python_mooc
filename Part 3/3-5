@@ -1,0 +1,13 @@
+# Taking turns
+# Write your solution here
+number = int(input("Please type in a number: "))
+og_number = number
+i = 1
+while i < number :
+    print(i)
+    print((number))
+    i += 1
+    number -= 1
+
+if og_number%2 != 0:
+    print(i)

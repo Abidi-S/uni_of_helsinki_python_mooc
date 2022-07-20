@@ -1,0 +1,11 @@
+# Flip the pairs
+# Write your solution here
+number = int(input("Please type in a number: "))
+i = 1
+j = 1
+while i < number:
+    print(i+1)
+    print(i)
+    i += 2
+if number%2 != 0:
+    print(i)
