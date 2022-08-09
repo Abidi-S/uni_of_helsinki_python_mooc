@@ -4,7 +4,7 @@ import json
 import math
 
 def retrieve_all():
-    data = urllib.request.urlopen(" https://studies.cs.helsinki.fi/stats-mock/api/courses")
+    data = urllib.request.urlopen("url")
     data = data.read()
     courses = json.loads(data)
 
@@ -16,7 +16,7 @@ def retrieve_all():
     return tupled_listicle
 
 def retrieve_course(course_name: str):
-    data = urllib.request.urlopen(f"https://studies.cs.helsinki.fi/stats-mock/api/courses/{course_name}/stats")
+    data = urllib.request.urlopen(f"url{course_name}")
     data = data.read()
     course_stats = json.loads(data)
 
